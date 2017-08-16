@@ -28,24 +28,19 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'lib-commonres'
     publishedGroupId = 'com.tinymatrix.commonres'
-    libraryName = 'lib-common-res'
-    artifact = 'lib-common-res'
-
+    libraryName = 'lib-commonres'
+    artifact = 'lib-commonres'
+    archivesName = "lib-commonres"
     libraryDescription = 'Common Resources'
-
-    siteUrl = 'https://gitlab.com/kirtan007/rapiddev'
+    siteUrl = 'https://github.com/kirtan007/lib-common-res'
     gitUrl = 'https://gitlab.com/kirtan007/rapiddev.git'
-
     libraryVersion = rootProject.ext.libVersionName
-
     developerId = 'kirtan007'
     developerName = 'Kirtan Patel'
     developerEmail = 'kirtan007@gmail.com'
-
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
 }
-
-apply from: '../mavenInstall.gradle'
-apply from: '../bintray.gradle'
+apply from: '../installv.gradle'
+apply from: '../bintrayv.gradle'
